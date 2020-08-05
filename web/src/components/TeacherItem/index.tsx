@@ -2,29 +2,48 @@ import React from 'react';
 import whatsAppIcon from '../../assets/images/icons/whatsapp.svg';
 
 import './styles.css'
+import api from '../../services/api';
 
-function TeacherItem() {
+export interface Teacher {
+  id: number;
+  avatar: string;
+  bio: string;
+  cost: number;
+  name: string;
+  subject: string;
+  whatsapp: string;
+}
+
+interface TeacherItemProps {
+  teacher: Teacher;
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher}) => {
+  function createNewConnection() {
+    api.post('connections', {
+      user_id: teacher.id,
+    })
+  }
+  
   return (
     <article className="teacher-item">
           <header>
-            <img src="https://avatars1.githubusercontent.com/u/21160525?s=460&u=25b91b8274b362edff695a70e486d9ea26d8e142&v=4" alt="Leonardo"/>
+            <img src={teacher.avatar} alt={teacher.name}/>
             <div>
-              <strong>Leonardo Dantas</strong>
-              <span>Física</span>
+              <strong>{teacher.name}</strong>
+              <span>{teacher.subject}</span>
             </div>
           </header>
-          <p>Apaixonado por games, tecnologia e ciência.
-            <br /><br />
-            Ao cursar Engenharia da Computação, aprendeu a fórmula "Sovetão" (S = so + vot + at²) e desde então não para de soltar palavras difíceis e explicações que ninguém entende.
-          </p>
+          <p>{teacher.bio}</p>
+
           <footer>
             <p>Preço/hora
-              <strong>R$ 20,00</strong> 
+              <strong>{teacher.cost}</strong> 
             </p>
-            <button type="button">
+            <a onClick={createNewConnection} href={`https://wa.me/${teacher.whatsapp}`} target="_blank">
               <img src={whatsAppIcon} alt="WhatsApp ícone"/>
               Entrar em contato
-            </button>
+            </a>
           </footer>
         </article>
   );
