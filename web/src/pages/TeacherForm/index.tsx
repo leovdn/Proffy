@@ -36,6 +36,7 @@ function TeacherForm() {
 
         <fieldset>
           <legend>Sobre Aula</legend>
+          
           <Select 
             name="subject" 
             label="Matéria" 
