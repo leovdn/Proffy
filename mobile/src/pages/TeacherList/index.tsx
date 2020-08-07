@@ -9,11 +9,12 @@ import { Feather } from '@expo/vector-icons'
 import PageHeader from '../../components/PageHeader';
 import TeacherItem, { Teacher } from '../TeacherItem';
 import styles from './styles';
+import { useFocusEffect } from '@react-navigation/native';
 
 function TeacherList() {
   const [isFiltersVisible, setIsFiltersVisible] = useState(false);
-  const [teachers, setTeachers] = useState<number[]>([]);
-  const [favorites, setFavorites] = useState([]);
+  const [teachers, setTeachers] = useState([]);
+  const [favorites, setFavorites] = useState<number[]>([]);
 
   const [subject, setSubject] = useState('');
   const [week_day, setWeek_day] = useState('');
@@ -32,7 +33,9 @@ function TeacherList() {
     });
   }
 
-
+  useFocusEffect(() => {
+    loadFavorites();
+  })
 
   function handleToggleFiltersVisible() {
     setIsFiltersVisible(!isFiltersVisible);
@@ -40,7 +43,7 @@ function TeacherList() {
 
   async function handleFiltersSubmit() {
     loadFavorites();
-    
+
     const response = await api.get('classes', {
       params: {
         subject,
