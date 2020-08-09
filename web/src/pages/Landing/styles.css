@@ -12,47 +12,49 @@
   background: var(--color-primary);
   flex: 1;
   display: flex;
-  width: 100vw;
+  flex-direction: column;
+  width: 100%;
   justify-content: center;
   align-items: center;
   padding: 3%;
 }
 
+.logo-container {
+  text-align: center;
+  /* margin-bottom: 3.2rem; */
+}
+
 .logo-container img {
-  height: 10rem;
+  /* height: 8rem; */
+  width: 100%;
+  max-width: 24rem;
 }
 
 .hero-image {
   width: 100%;
+  max-width: 36rem;  
 }
-
-.logo-container {
-  text-align: center;
-  margin-bottom: 3.2rem;
-}
-
 
 .logo-container h2 {
   font-weight: 500;
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 4.6rem;
   margin-top: 0.8rem;
 }
 
 #page-down {
-  height: 30vh;
   display: flex;
   flex-direction: column;
   max-width: 700px;
-  padding: 3%;
+  margin-top: 2rem;
+  height: 21rem;
 }
 
 .buttons-container {
   display: flex;
   flex: 1;
-  justify-content: space-between;
+  justify-content: center;
   margin: 2rem 0;
-  width: 86vw;
 }
 
 .buttons-container a {
@@ -73,7 +75,7 @@
 }
 
 .buttons-container a:first-child {
-  margin-right: 1.6rem;
+  margin-right: 4.6rem;
 }
 
 
