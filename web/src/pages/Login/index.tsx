@@ -52,13 +52,16 @@ function Login() {
             <a href="#">Esqueci minha senha</a>
           </div>
 
-          <button>
-            Entrar
-          </button>
+          <Link to="/">
+            <button>
+              Entrar
+            </button>
+          </Link>
+
 
           <div className="form-footer">
             <h2>Nao tem conta?
-              <Link to="/register">Cadastre-se</Link>
+              <Link to="/">Cadastre-se</Link>
             </h2>
             <span>É de graça
             <img src={purpleHeartIcon} alt="Coração Roxo" />
