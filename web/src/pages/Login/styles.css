@@ -8,6 +8,7 @@
   background: url('../../assets/images/login-background.svg') center center no-repeat var(--color-primary);
   flex: 1;
   display: flex;
+  background-size: contain;
   justify-content: center;
   align-items: center;
 }

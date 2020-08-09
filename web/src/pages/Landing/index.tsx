@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import api from '../../services/api';
 import logoImg from '../../assets/images/logo.svg';
 import landingImg from '../../assets/images/landing.svg';
 import studyIcon from '../../assets/images/icons/study.svg';
 import giveClassesIcon from '../../assets/images/icons/give-classes.svg';
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
+import logoutIcon from '../../assets/images/icons/logout.svg';
 import './styles.css'
-import api from '../../services/api';
 
 function Landing() {
   const [totalConnections, setTotalConnections] = useState(0);
@@ -21,6 +22,19 @@ function Landing() {
 
   return (
     <div id="page-landing">
+      <div className="header">
+        <div className="header-container">
+          <div className="profile">
+            <img src="https://github.com/leovdn.png" alt=""/>
+            <span>Leonardo Dantas</span>
+          </div>
+          <div className="logout">
+            <Link to="/home">
+              <img src={logoutIcon} alt=""/>
+            </Link>
+          </div>
+        </div>
+      </div>
       <div id="page-top">
         <div className="content">
 
