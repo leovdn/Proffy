@@ -1,0 +1,32 @@
+#page-login {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-cover {
+  background: url('../../assets/images/login-background.svg') center center no-repeat var(--color-primary);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container h2 {
+  color: var(--color-text-in-primary);
+}
+
+.login-fields {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
