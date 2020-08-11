@@ -10,7 +10,7 @@ O **Proffy** é uma plataforma de estudos responsável pela conexão entre aluno
 
 Os alunos, por sua vez, podem pesquisar pela disciplina, dia da semana e horário, surgindo a lista de professores disponíveis. 
 
-Foi desenvolvido nas versões Web e Mobile, utilizando a stack **React**, **React Native** e  **Node.js**. Seu 
+Foi desenvolvido nas versões Web e Mobile, utilizando a stack **React**, **React Native** e  **Node.js**. 
 
 
 ---
@@ -18,13 +18,6 @@ Foi desenvolvido nas versões Web e Mobile, utilizando a stack **React**, **Reac
 
 ```
  - Node.js LTS 12.18
-```
-
-
-**3º - Abra o Ecoleta em seu navegador acessando:**
-
-```
-http://localhost:3031/ ou http://127.0.0.1:3031/
 ```
 
 # Instalando e Testando
@@ -78,7 +71,7 @@ $ yarn start
 ```
 Após os comandos, leia o **QRCode** com o app **Expo** ou rode em um emulador.
 
-##Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 
 
