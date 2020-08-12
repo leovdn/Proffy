@@ -4,7 +4,7 @@
 
 <img src="./web/public/proffy-home.png" align="center"/>
 
-## Sobre o Projeto
+## 📖	Sobre o Projeto
 
 O **Proffy** é uma plataforma de estudos responsável pela conexão entre aluno e professor. Durante o cadastro, é possível estipular as matérias ensinadas bem como o valor da hora/aula. 
 
@@ -20,7 +20,7 @@ Foi desenvolvido nas versões Web e Mobile, utilizando a stack **React**, **Reac
  - Node.js LTS 12.18
 ```
 
-# Instalando e Testando
+# ⚙️Instalando e Testando
 Siga os passos abaixo respectivamente para uso do projeto em um terminal de sua preferência.
 
 ###1º- Clonando o repositório
@@ -39,10 +39,12 @@ $ yarn install
 
 # Execute a API
 $ yarn start
-```
-*Acesso: http://localhost:3030/*
 
-#### a) Executando a versão Web 💻
+Acesso: http://localhost:3030/
+
+```
+
+### a) 🖥️️ Executando a versão Web 	
 
 ```bash
 # Navegue para a pasta web
@@ -53,11 +55,13 @@ $ yarn install
 
 # Execute a aplicação web
 $ yarn start
-```
-Acesso: http://localhost:3000/ para ver o resultado.
 
-#### b) Executando a versão Mobile 📱
-*Para o teste será necessária a instalação do app [Expo](https://play.google.com/store/apps/details?id=host.exp.exponent) no smartphone ou  emulador Android / IOS.*
+Acesso: http://localhost:3000/ 
+
+```
+
+### b) 📱 Executando a versão Mobile 
+⚠️ *Para o teste será necessária a instalação do app [Expo](https://play.google.com/store/apps/details?id=host.exp.exponent) no smartphone ou  emulador Android / IOS.*
 
 ```bash
 # Navegue até a pasta mobile
@@ -69,7 +73,7 @@ $ yarn install
 # Execute a aplicação Mobile
 $ yarn start
 ```
-Após os comandos, leia o **QRCode** com o app **Expo** ou rode em um emulador.
+<p align="center">Após os comandos, leia o QRCode com o app Expo ou rode em um emulador.</p>
 
 ## Tecnologias Utilizadas
 
