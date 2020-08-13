@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./web/public/proffy-logo-alt.png" />
+</p>
+
 # Proffy  -  Next Level Week #2
 > Projeto desenvolvido em homenagem ao dia do Profissional da Educação durante o 2º evento Next Level Week ministrado pela Rocketseat. 
 > 
