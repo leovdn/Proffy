@@ -80,7 +80,11 @@ $ yarn start
 
 ## Tecnologias Utilizadas
 
-
+- Typescript
+- ReactJs
+- Node.js
+- React Native
+- SQLite
 
 
 
